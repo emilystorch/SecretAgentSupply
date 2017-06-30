@@ -1,0 +1,143 @@
+html{
+  font-family: Helvetica;
+  font-size: 18px;
+  color: white;
+}
+
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+}
+
+/* Header */
+
+.header{
+  justify-content: flex-start;
+  background-color: black;
+  align-items: center;
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
+}
+
+.header img{
+  height: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+.header h3{
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+
+/* New Items Section */
+
+.initial{
+  height: 25rem;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+}
+
+#newarrival{
+  display: flex;
+  display: inline-block;
+  background-color: black;
+  margin-top: 9rem;
+  font-weight: bold;
+  padding-left: 3rem;
+  width: 20rem;
+}
+
+#newarrival h3{
+  padding-top: 2rem;
+  font-size: 1rem;
+}
+
+#newarrival h1{
+  padding-top: 0.25rem;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Navigation */
+
+.navigation{
+  background-color: firebrick;
+  justify-content: space-around;
+}
+
+.navigation nav{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
+  padding: 0rem 2rem;
+}
+
+/* Main Container */
+
+.main{
+  justify-content: space-between;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.product{
+  width: 30%;
+}
+
+.product-image{
+  border: 4px solid black;
+  display: flex;
+  justify-content: center;
+  height: 9em;
+  padding: 2em 0;
+  align-items: center;
+}
+
+.product-image img{
+  max-width: 8em;
+}
+
+.main span{
+  display: block;
+  background-color: black;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+/* Location */
+
+.location{
+  justify-content: space-between;
+  padding-bottom: 4rem;
+}
+
+.item{
+  width: 35%;
+}
+
+.item h3{
+  background-color: black;
+  padding: 1rem 0 1rem 2rem;
+}
+
+.item p{
+  color: black;
+}
+
+/* Footer */
+
+.footer{
+  background-color: black;
+  padding: 5em 0;
+  margin-top: 4em;
+  text-align: left;
+  align-items: center;
+}
