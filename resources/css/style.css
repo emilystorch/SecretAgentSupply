@@ -10,6 +10,12 @@ html{
   display: flex;
 }
 
+@media only screen and (max-width: 1024px){
+  body{
+    font-size: 16px;
+  }
+}
+
 /* Header */
 
 .header{
@@ -62,6 +68,25 @@ html{
   padding-bottom: 2rem;
 }
 
+@media only screen and (max-width: 470px){
+  .initial{
+    height: 15em;
+  }
+  #newarrival{
+    margin-top: 10em;
+    padding-left: 2rem;
+    width: 100%;
+  }
+  #newarrival h3{
+    padding-top: 1rem;
+    font-size: 0.77rem;
+  }
+  #newarrival h1{
+    font-size: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
 /* Navigation */
 
 .navigation{
@@ -69,15 +94,27 @@ html{
   justify-content: space-around;
 }
 
-.navigation nav{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0.75em 0;
 }
 
-nav a{
-  text-decoration: none;
-  color: white;
-  padding: 0rem 2rem;
+.mobile-nav{
+  display: none;
+}
+
+@media only screen and (max-width: 1024px){
+  .normal{
+    display: none;
+  }
+
+  .mobile-nav{
+    display: block;
+    text-align: center;
+  }
 }
 
 /* Main Container */
@@ -112,6 +149,25 @@ nav a{
   text-align: center;
 }
 
+@media only screen and (max-width: 1024px){
+  .product{
+    width: 47%;
+  }
+  .glasses{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px){
+  .product{
+    width: 90%;
+    margin: auto;
+  }
+  .watch{
+    display: none;
+  }
+}
+
 /* Location */
 
 .location{
@@ -129,7 +185,18 @@ nav a{
 }
 
 .item p{
+  margin-top: 1em;
   color: black;
+}
+
+@media only screen and (max-width: 470px){
+  .location{
+    flex-wrap: wrap;
+  }
+  .item{
+    width: 90%;
+    margin: 0.5em auto;
+  }
 }
 
 /* Footer */
@@ -140,4 +207,10 @@ nav a{
   margin-top: 4em;
   text-align: left;
   align-items: center;
+}
+
+@media only screen and (max-width: 470px){
+  .footer{
+    text-align: center;
+  }
 }
